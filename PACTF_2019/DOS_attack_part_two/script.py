@@ -10,7 +10,7 @@ def quickhash(string):
 i=0
 list=os.listdir("path_to_your_folder")
 for file in list:
-    with open("C:/Users/youmb/Downloads/serverlog.4af8e4389eff/logs/" + file, "r") as f:
+    with open("path_to_your_folder" + file, "r") as f:
         cont=f.readlines()
         a=cont[0] #I will just extract their contents at positions 0 and 5 (I chose this positions randomly)
         a=a[:-1]
