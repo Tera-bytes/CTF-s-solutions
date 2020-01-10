@@ -9,7 +9,7 @@ def quickhash(string):
 
 list=os.listdir("path_to_your_folder") #extracting the names of all the files in the folder
 for file in list:
-    with open("path_to_your_folder" + file, "r") as f:
+    with open("path_to_your_folder" + file, "r") as f: #make sure the path to your folder ends with a slash
         cont=f.readlines()
         a=cont[0] #I will just extract their contents at positions 0 and 5 (I chose this positions randomly)
         a=a[:-1]
