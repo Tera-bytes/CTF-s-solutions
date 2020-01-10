@@ -7,8 +7,7 @@ def quickhash(string):
 		hash_ = hash_ % (2 ** 32)
 	return hash_
 
-i=0
-list=os.listdir("path_to_your_folder")
+list=os.listdir("path_to_your_folder") #extracting the names of all the files in the folder
 for file in list:
     with open("path_to_your_folder" + file, "r") as f:
         cont=f.readlines()
@@ -16,4 +15,5 @@ for file in list:
         a=a[:-1]
         b=cont[5]
         b=b[:-1]
-        if quickhash(a)==quickhash(b): print(file)
+        if quickhash(a)==quickhash(b): 
+		print(file)
