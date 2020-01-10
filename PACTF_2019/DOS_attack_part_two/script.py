@@ -8,12 +8,11 @@ def quickhash(string):
 	return hash_
 
 i=0
-list=os.listdir(r"C:\Users\youmb\Downloads\serverlog.4af8e4389eff\logs")
-print(list)
+list=os.listdir("path_to_your_folder")
 for file in list:
     with open("C:/Users/youmb/Downloads/serverlog.4af8e4389eff/logs/" + file, "r") as f:
         cont=f.readlines()
-        a=cont[0]
+        a=cont[0] #I will just extract their contents at positions 0 and 5 (I chose this positions randomly)
         a=a[:-1]
         b=cont[5]
         b=b[:-1]
