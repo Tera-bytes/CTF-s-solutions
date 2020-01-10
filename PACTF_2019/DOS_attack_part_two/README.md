@@ -1,7 +1,8 @@
 # Denial of Searching attack, Part Two: Crash Collision!
 
 So, the first thing is to identify what causes the DOS, and as the title implies, it's due to crash collion (precisely: hash collision). Let me try to give a brief explanation (in case you ain't familiar with hash tables):
-Question: How is a hash table used to store data?
+
+#### Question: How is a hash table used to store data?
 
 Answer: let's say we want to store string A in our hash table. String A is hashed (using the provided hash function), and the outputu is an integer(4 for example). That integer (usually called hash) is the index at which A is stored in the hash table. Now, let's assume we got another string B to be stored. Remember you already stored A in the hash table at position "4". Now, upon hashing B you still get "4", whereas that position is already occupied by A:hence the name hash collision (and that's where things start going south). If such a thing happens a bunch of times, your server/database will simply crash.
 
