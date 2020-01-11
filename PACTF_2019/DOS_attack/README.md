@@ -3,9 +3,8 @@ The key to this is knowing what **regexes** are. The threat here is what is know
 
 I wrote a script that writes the time taken by each regex to go through the entire list of words, and at the end I just had to extract the one which took the longest. I eventually got the flag:
 
-## flag{Housewives_Headlines_Cosmetic}
+### flag{Housewives_Headlines_Cosmetic}
 which took 0.909s to go through the dictionary (NB: that time is problably OS dependent). This is around 45 times the time taken by the average regex.
-
 ### Question: Guess what's the **huge** drawback of this method!
 
 Answer: 
