@@ -8,7 +8,7 @@ which took 0.909s to go through the dictionary (NB: that time is surely system d
 #### Question: Guess what's the **huge** drawback of this method!
 
 #### Answer: 
-This code took around 5hrs to reach to completion. However, this ain't **totally** the fault of the script. Look at it this way: each regex took at least 0.02 to go through the dictionary, but we had a million of them! That does explains while it took so long!
+This code took around 5hrs to reach to completion. I literally ran the script, went to bed, then woke up and got my flag. However, this ain't **totally** the fault of the script. Look at it this way: each regex took at least 0.02 to go through the dictionary, but we had a million of them! That does explains while it took so long!
 
 After solving it, I reached one of the administrators of PACTF and I was told that wasn't the right approach (though correct). See below link to the writeup made by the problem maker himself:
 
