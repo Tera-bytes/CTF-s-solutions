@@ -18,7 +18,7 @@ So, the task was to write a script that will find the file that leads to the gre
         flag{Just_Potatoes_Ball}
         flag{Shepherd_Acrylic_Luke}
         
-Then I found the flag to be the third one:
+Then I found the flag to be the third one (via trial and error):
 # flag{Dos_Funded_Actor}
 
 Yeah I know that was a pretty crazy assumption (as the flag could easily not have been part of those 8). Anyways, you could easily add a few more lines to my code to get the total number of collisions of each file, and then extract the one with the highest collisions (see https://github.com/Ptomerty/ctf-dump/tree/master/pactf-2019/denial-of-searching-2 for such an approach)
