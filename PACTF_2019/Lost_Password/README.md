@@ -4,7 +4,7 @@ This was pretty straight forward, as you just had to write a few lines of code t
  f=open("path","r")
  a=f.readlines()
  for elmt in a:
-     elmt=elmt[:-1]
+     elmt=elmt[:-1] #removing the newline character 
      if len(elmt)==20 and elmt.startswith("fe") and elmt.endswith("g"): 
          print(elmt)
          
