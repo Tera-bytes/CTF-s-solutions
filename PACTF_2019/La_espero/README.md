@@ -3,4 +3,4 @@ Our task is to find the password. After a quick google search, we realise the gi
 
 ## koramikinoen-la-mondon-venis-nova-sento
 
-Remark: The hint wasn't really necessary here,as its only purpose was to let you know you are dealing with Esperanto.
+Remark: The hint wasn't really necessary here, as its only purpose was to let you know you are dealing with Esperanto.
