@@ -5,7 +5,7 @@ Our task is to write a script that will take each word in the dictionary, append
 
 I waisted time navigating through the document provided in search of hidden contents, but after googling, I realised there was a trick to perform.
 
-### Question: what's is a .docx file?
+### Question: what's a .docx file?
 ### Answer: 
 To be brief, a .docx file is simply a bunch of XML files (Extensible Markup Language). To view these XML files, you have to change the word's file extension to ".zip", and then open it using any compression program like Winrar or 7z. 
 
