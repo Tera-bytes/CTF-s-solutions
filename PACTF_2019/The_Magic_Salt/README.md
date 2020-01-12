@@ -1,5 +1,5 @@
 # The Magic Salt
-given hash: **832c8f6be1b48ce9abcd6deb4ebcdc31**
+Given hash: **832c8f6be1b48ce9abcd6deb4ebcdc31**
 
 Our task is to write a script that will take each word in the dictionary, append the salt to it, then hash it; and if it happens to be equal to our given hash, that would be our flag. But, first things first, we need to get the salt. How? We were told it was hidden in the word document provided. 
 
@@ -12,3 +12,4 @@ Navigating through the zip content, we find an XML document in the folder **word
 Googling a few words contained in the dictionary, we realise that they  refer to names of cards in a certain game card known as **Scryfall**. So, I just searched for the card at position "s:A25 cn:50", which was **Counterspell**.
 
 We finally got our salt and can now move on to write our script. At the end, I got the flag to be:
+## siege-rhino
