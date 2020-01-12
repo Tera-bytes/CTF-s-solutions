@@ -10,4 +10,6 @@ This was pretty straight forward, as you just had to write a few lines of code t
          
 ~~~
 
+By doing this you get the flag:
+## fejfoslendpinwoehgng
 
