@@ -5,8 +5,9 @@ Our task is to write a script that will take each word in the dictionary, append
 
 I waisted time navigating through the document provided in search of hidden contents, but after googling, I realised there was a trick to perform.
 
-Question: what's is a .docx file?
-Answer: To be brief, a .docx file is simply a bunch of XML files (Extensible Markup Language). To view these XML files, you have to change the word's file extension to ".zip", and then open it using any compression program like Winrar or 7z. 
+### Question: what's is a .docx file?
+### Answer: 
+To be brief, a .docx file is simply a bunch of XML files (Extensible Markup Language). To view these XML files, you have to change the word's file extension to ".zip", and then open it using any compression program like Winrar or 7z. 
 
 Navigating through the zip content, we find an XML document in the folder **word**, titled **document.xml**. When we open it, we see an interesting comment on line 2: **The salt is the name of the card at "s:A25 cn:50"**. But, what's "s:A25 cn:50"? 
 Googling a few words contained in the dictionary, we realise they refer to names of cards in a certain game known as **Scryfall**. Or, if you are keen enough, the name of the dictionary provided ("scryfall.472ae4028dd4") would have spark your interest. So, I just searched for the card at position "s:A25 cn:50", which was **counterspell** (make sure to use lower cases only).
