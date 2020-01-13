@@ -14,8 +14,7 @@ Notice these weird characters: "â€®" and "â€¬". Their respective hex val
 
 Example: if you open a hex editor and type:
 
-**E2 80 AE** 62 61 6E 61 6E 61 **E2 80 AC**  (where "62 61 6E 61 6E 61" stands for banana), what you will see in a text editor will be:
-ananab. That's, the word banana would be flipped. 
+**E2 80 AE** 62 61 6E 61 6E 61 **E2 80 AC** 20 72 69 63 65 (where "62 61 6E 61 6E 61" and "72 69 63 65" stand for banana and rice respectively), what you will see in a text editor will be: **ananab rice** . That's, the word banana would be flipped. 
 
 Let's apply it to our problem. We see the following in a hex editor:
 
