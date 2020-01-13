@@ -4,7 +4,7 @@ Firstly, I realised most of the files were of length 21. So, to be sure, I wrote
 ## flag{qdolctmy‮{fdp.exe‬
 (and that's it! question solved)
 
-Now, the million-dollar question is: **where is "flag{qdolctmyâ€®{fdp.exeâ€¬" coming from?**
+Now, the million-dollar question is: **where is "flag{qdolctmyâ€®{fdp.exeâ€¬" coming from? or in other words, why is flag{qdolctmyexe.pdf} our flag?**
 
 So, to look closely at what was going on, I opened the .dat file in a hex editor and scroll to where that flag was. Surprisingly, what I saw in the hex editor was slightly different from what appeared in the .dat file. That's, in the .dat file I saw "flag{qdolctmy‮{fdp.exe‬", while in the hex editor (at that same position) I instead saw "flag{qdolctmyâ€®{fdp.exeâ€¬". 
 
