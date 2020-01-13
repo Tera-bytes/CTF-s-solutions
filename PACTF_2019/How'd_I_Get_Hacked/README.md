@@ -9,11 +9,16 @@ So, to look closely at what was going on, I opened the .dat file in a hex editor
 NB:I was using HxD editor on Windows, whose default code page is ANSI.
 
 Notice these weird characters: "â€®" and "â€¬". Their respective hex values are "E2 80 AE" and "E2 80 AC". In fact, these are special characters used to reverse the order of a string.
+
 Example: if you open a hex editor and type:
+
 **E2 80 AE** 62 61 6E 61 6E 61 **E2 80 AC**  (where "62 61 6E 61 6E 61" stands for banana), what you will see in a text editor will be:
 ananab. That's the word banana would be flipped. 
-Let's apply it to our problem. We see the following in a hex editor: 
+
+Let's apply it to our problem. We see the following in a hex editor:
+
 **E2 80 AE** 7B 66 64 70 2E 65 78 65 **E2 80 AC** ( â€®{fdp.exeâ€¬),
+
 which means what will appear in a text editor won't be "{fdp.exe", but instead exe.pdf, thereby luring you as you will think you are dealing with a pdf file.
 
 That was the principle used to build this task. 
