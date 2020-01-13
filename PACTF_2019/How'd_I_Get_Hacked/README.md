@@ -10,7 +10,7 @@ So, to look closely at what was going on, I opened the .dat file in a hex editor
 
 NB:I was using HxD editor on Windows, whose default code page is ANSI.
 
-Notice these weird characters: "â€®" and "â€¬". Their respective hex values are "E2 80 AE" and "E2 80 AC". In fact, these are special characters used to reverse the order of a string.
+Notice these weird characters: "â€®" and "â€¬". Their respective hex values are "E2 80 AE" and "E2 80 AC". In fact, "E2 80 AE" causes a right to left override, meanwhile "E2 80 AC" cancel its effect.
 
 Example: if you open a hex editor and type:
 
@@ -21,6 +21,6 @@ Let's apply it to our problem. We see the following in a hex editor:
 
 **E2 80 AE** 7B 66 64 70 2E 65 78 65 **E2 80 AC** ( â€®{fdp.exeâ€¬),
 
-which means what will appear in a text editor won't be "{fdp.exe", but instead exe.pdf. This definitely lures you, as you will think you are dealing with a pdf file (flag{qdolctmyexe.pdf}), wheras it's in reality an executable (flag{qdolctmy{fdp.exe).
+which means what will appear in a text editor won't be "{fdp.exe", but instead exe.pdf. This definitely lures you, as you will think you are dealing with a pdf file (flag{qdolctmyexe.pdf}), whereas it's in reality an executable (flag{qdolctmy{fdp.exe).
 
 That was the principle used to build this task. 
