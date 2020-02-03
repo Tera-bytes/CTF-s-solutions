@@ -10,7 +10,7 @@ So, to look closely at what was going on, I opened the .dat file in a hex editor
 
 NB:I was using HxD editor on Windows, whose default code page is ANSI.
 
-Notice these weird characters: "â€®" and "â€¬". Their respective hex values are "E2 80 AE" (U+202E) and "E2 80 AC". In fact, "E2 80 AE" (U+202C) causes a right-to-left override, meanwhile "E2 80 AC" cancels the effect of any previous override.
+Notice these weird characters: "â€®" and "â€¬". Their respective hex values are "E2 80 AE" (**U+202E**) and "E2 80 AC" (**U+202C**). In fact, "E2 80 AE"  causes a right-to-left override, meanwhile "E2 80 AC" cancels the effect of any previous override.
 
 Example: if you open a hex editor and type:
 
